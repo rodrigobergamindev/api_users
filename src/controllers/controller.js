@@ -42,7 +42,7 @@ const hasSuite = async (req, res) => {
     const data = await response.data
   
     const suites = data.filter(user => {
-      return user.hasOwnProperty('suite') ? data : {}
+      return user.address.suite.includes('Suite')
     })
 
     return res.json(suites)
