@@ -4,6 +4,6 @@ const controller = require('../controllers/controller')
 
 router.get('/api/websites', controller.getWebsites)
 router.get('/api/users', controller.getUsers)
-router.get('/api/suites', controller.hasSuite)
+router.get('/api/suites', controller.isSuite)
 
 module.exports = router

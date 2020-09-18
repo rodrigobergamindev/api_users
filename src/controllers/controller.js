@@ -37,7 +37,7 @@ const getUsers =  async (req, res) => {
     return res.json(ordenedUsers)
     }
 
-const hasSuite = async (req, res) => {
+const isSuite = async (req, res) => {
     const response = await axios.get(url)
     const data = await response.data
   
@@ -50,7 +50,7 @@ const hasSuite = async (req, res) => {
 
 
     module.exports = { 
-        hasSuite,
+        isSuite,
         getUsers,
         getWebsites
     }
